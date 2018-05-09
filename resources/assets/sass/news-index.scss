@@ -1,0 +1,101 @@
+.news-index {
+	.news-title {
+	    color: #111;
+	    font-size: 30px;
+	    padding-left: 40px;
+	    margin-bottom: 22px;
+	    background-image: url(../images/icon1.png);
+	    background-repeat: no-repeat;
+	    background-position: left center;
+	}		
+	.content {
+		background-color: #f3f3f3;
+		overflow: hidden;
+	}
+	.banner {
+		padding: 20px;
+		background-color: #fdfdfd;
+		.container {
+
+			.swiper-container {
+				height: 300px;
+				.swiper-slide {
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center; 					
+					position: relative;
+					a {
+						display: block;
+						height: 100%;
+						.info {
+							position: absolute;
+							left: 0;
+							bottom: 0;
+							width: 100%;
+							height: 40px;
+							overflow: hidden;
+							background-color: rgba(0,0,0,.2);
+							h2 {
+								margin: 0;
+								padding: 0 1em;
+								font-size: 20px;
+								line-height: 40px;
+								color: #fff;
+							}
+						}						
+					}
+					
+				}
+
+			}		
+		}		
+	}
+
+	.index-list {
+		background-color: #f3f3f3;
+		.container {
+		    
+		    margin-top: 35px;	
+		    margin-bottom: 35px;
+		    > div {
+		    	background-color: #fff;
+		    	padding: 0 15px;
+			    @include ct-list;
+			    h1 {
+			    	margin: 0;
+			    	line-height: 70px;
+			    }	
+			    li {
+			    	padding: 15px;
+			    	border-radius: 2px;
+    				box-shadow: 0 0 1px #ddd, 0 0 1px #ddd;	
+			    	&:last-child {
+			    		margin-bottom: 0;
+			    	}
+			    	&:hover {
+			    		box-shadow: 0 0 10px 5px #ddd;
+			    	}
+			    }	
+			    .more-box {
+			    	text-align: center;
+			    	padding: 15px 0;
+			    	.more-btn {
+			    		display: inline-block;
+			    		font-size: 18px;
+					    padding: 3px 50px;
+					    border: 1px solid #ddd;
+					    border-radius: 3px;
+					    text-decoration: none;
+					    color: #333;
+					    &:hover {
+					    	color: #fff;
+					    	background-color: #c09140;
+					    }
+			    	}
+			    }		    	
+		    } 
+
+		}
+		
+	}
+}

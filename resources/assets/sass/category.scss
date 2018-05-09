@@ -1,0 +1,233 @@
+//category页面
+@mixin ct-list {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            margin-bottom: 25px;
+            &:last-cihld {
+                margin-bottom: 0;
+            }
+            a {
+                display: block;
+                position: relative;
+                overflow: hidden;
+                .left {
+                    width: 160px;
+                    height: 110px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    .preview {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .right {
+                    padding-left: 180px;
+                    height: 100%;
+                    .title {
+                        font-size: 20px;
+                        color: #000;
+                        height: 20px;
+                        line-height: 20px;
+                        overflow: hidden;
+                        margin: 0;
+                        margin-bottom: 10px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;                        
+                    }
+                    .summary {
+                        font-size: 16px;
+                        color: #666;
+                        height: 50px;
+                        overflow: hidden;
+                        word-break: break-all;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+                    .meta {
+                        font-size: 14px;
+                        color: #666;
+                        .tag {
+                            margin-left: 20px;
+                            i {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    text-decoration: none;
+                    .title {
+                        color: #c09140;
+                    }
+                }                
+            }
+        }        
+    }
+
+}
+.category {
+    .content {
+/*        background-color: #f3f3f3;
+        padding-bottom: 35px;   */     
+        .top-news {
+            padding: 40px 0;
+            background-color: #fdfdfd;
+            .container {
+
+                > h1 {
+                    color: #111;
+                    font-size: 30px;
+                    padding-left: 40px;
+                    margin-bottom: 22px;
+                    background-image: url(../images/icon1.png);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                }
+                .left {
+                    .swiper-container {
+                        //width: 650px;
+                        height: 380px;
+                        position: relative;
+                        .swiper-slide {
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center center; 
+                            a {
+                                display: block;
+                                height: 100%;
+                                color: #fff;
+                                cursor: pointer;
+                                .info {
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    width: 100%;
+                                    padding: 10px;
+                                    padding-right: 230px;
+                                    color: #fff;
+                                    background-color: rgba(0,0,0,.2);                                
+
+                                    h2 {
+                                        font-size: 18px;
+                                        margin: 10px 0;
+                                    }
+                                    p {
+                                        margin: 0;
+                                        height: 44px;
+                                        overflow: hidden;
+                                    }
+                                    .meta {
+                                        position: absolute;
+                                        right: 15px;
+                                        bottom: 10px;
+                                        text-align: right;
+                                        //width: 100%;
+                                        .tag {
+                                            i {
+                                                margin-right: 5px;
+                                            }
+                                            margin-left: 20px;
+                                        }
+                                    }                                
+                                    
+
+                                }                            
+                            }
+
+                        }
+                        .swiper-pagination  {
+                            display: none;
+                        }
+                    }
+                }
+                .right {
+                    .ct-list {
+                        @include ct-list;
+                    }
+                }            
+            }
+
+        }
+
+        .ct-body {
+            .container {
+                
+                margin-top: 35px;
+                .wrap {
+                    background-color: #fff;
+                    overflow: hidden;
+                    padding: 20px;
+                }
+                .ls {
+                    margin: 0;
+                    margin-top: 35px;
+                    .ll {
+                        .ctbody-list {
+                            a {
+                                height: 160px;
+                            }
+                            @include ct-list;
+                        }
+                        li {
+                            padding-bottom: 20px;
+                            margin-bottom: 20px !important;
+                            border-bottom: 1px solid #ddd; 
+                        }
+                        .left {
+                            width: 230px !important;
+                            height: 160px !important;
+                            left: auto !important;
+                            right: 0;
+                        }     
+                        .right {
+                            padding-left: 0 !important;
+                            padding-right: 240px;
+                            .title {
+                                margin-bottom: 20px !important;
+                            }
+                            .summary {
+                                height: 75px !important;
+                                margin-bottom: 27px;
+                            }
+                        }                       
+                    }
+
+                    .lr {
+                        @include sidebar-list;
+                    }
+                }
+                .pagenav {
+
+                    span,a{
+                        color: $yl-color;
+                    }
+                }
+            }
+
+        }        
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .category .top-news .container .left .swiper-container .swiper-slide .info {
+        padding-right: 10px;
+    }
+    .category .top-news .container .left .swiper-container .swiper-slide .info .meta {
+        position: static;
+    }    
+}
+@media only screen and (max-width: 992px) {
+    .top-news .ct-list{
+        margin-top: 10px;
+    }
+}

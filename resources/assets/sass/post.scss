@@ -1,0 +1,130 @@
+//post页面
+@mixin sidebar-list {
+    h1 {
+        font-size: 22px;
+        color: #111;
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            a {
+                color: #111;
+                display: block;
+                text-decoration: none;
+                position: relative;
+                span{
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                    color: #ccc;
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                p {
+                    padding: 10px 10px 10px 30px;
+                    font-weight: bold;
+                }
+                &:hover {
+                    p {
+                        color: $yl-color;
+                    }
+                    
+                }
+            }
+        }
+    }    
+}
+.post {
+    .banner {
+        padding: 30px 0;
+        /*border-bottom: 1px solid #eee;*/
+        background-color: #fdfdfd;
+        img {
+            width: 100%;
+        }
+    }
+
+    .post-body {
+        background-color: #fff;
+        padding: 30px 0;
+        .container {
+            .row {
+                margin: 0;
+            }
+        }
+        .left {
+            border: 1px solid #eee;
+            border-radius: 2px;  
+            padding: 0 30px;
+            .article-box {
+                .navigation {
+                    color: #939393;
+                    font-size: 15px;
+                    margin: 25px 0 35px 0;
+                }
+                h1 {
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: #c09140;
+                    margin-top: 50px;
+                }                
+                .article {
+                    font-size: 16px;
+                    color: #111111;
+                    img {
+                        max-width: 100%;
+                        margin: 30px 0;
+                    }
+                }
+                .page-navigation {
+                    font-size: 16px;
+                    padding: 0 5px;
+                    padding-top: 40px;
+                    padding-bottom: 20px;  
+                    overflow: hidden;  
+                    a {  
+                        width: 45%;
+                        color: #666;
+                        text-decoration: none; 
+                        padding: 10px;
+                        border-radius: 3px;
+                        box-shadow: 0 0 1px #ddd;     
+                        &:hover {
+                            box-shadow: 0 0 8px 3px #ddd;
+                        }                   
+                        p {
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;                               
+                        }                                           
+                    }
+                    .page-up {                        
+                        float: left;                       
+                        span {
+                            color: $yl-color;
+                        }
+                    }       
+                    .page-down {
+                        float: right;                      
+                        span {
+                            color: $yl-color;
+                        }                        
+                    }         
+                }
+            }                      
+        }
+        .right {
+            padding-left: 40px;
+            .post-sidebar {
+                margin-top: 50px;
+                @include sidebar-list;
+            }            
+        }
+
+    }
+}

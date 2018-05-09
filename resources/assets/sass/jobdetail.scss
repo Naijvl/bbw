@@ -1,0 +1,174 @@
+.jobdetail {
+	background-color: #f8f8f8;
+	.top {
+		background: #fff;
+		.jobname {
+		    display: inline-block;
+		    color: #7a7a7a;
+		    font-size: 24px;
+		    line-height: 50px;
+		}
+		.right {
+		    float: right;
+		    line-height: 50px;			
+			a {
+			    display: inline-block;
+			    color: #444;
+			    line-height: 20px;
+			    margin-right: 10px;
+			    text-decoration: none;				
+				i {
+				    font-size: 18px;
+				    color: #019B90;
+				    margin-right: 3px;
+				}
+				&:hover {
+					color: #019B90;
+				}
+			}
+		}
+	}
+	.wrap {
+		#tab {
+			margin: 20px 0;
+		    overflow: hidden;			
+			.tab {
+			    float: left;
+			    width: 50%;
+				padding: 10px 0px;
+			    border: 1px solid #ddd;
+			    background: #f5f5f5;
+			    text-align: center;
+			    cursor: pointer;
+			    &.on {
+			    	color: #ffffff;
+			    	background: #e05f32;
+			    }
+			}
+
+		}
+		.tabbody {
+			display: none;
+			&.active {
+				display: block;
+			}
+			.not-found {
+				text-align: center;
+				p {
+				    text-align: center;
+				    font-size: 24px;
+				    color: #787878;
+
+				}
+				button {
+					margin-top: 30px;
+				    display: inline-block;
+				    font-size: 16px;
+				    color: #ffffff;
+				    padding: 8px 16px;
+				    background: #e05f32;
+				    border-radius: 3px;					
+				}
+			}
+		}
+		.candidate-table {	
+			table {
+				width: 100%;
+			    overflow: hidden;
+			    border-collapse: separate;
+			    border: 1px solid #f5f5f5;
+			    border-width: 1px 0 1px 0;	
+			    background: #fff;
+		    	thead {
+		    		td {
+		    			padding: 8px 0;	
+		    		}
+		    	}
+		    	tbody {
+		    		td {
+		    			padding: 10px 4px;	
+		    			&:first-child {
+							border-left: 5px solid #ffffff;			    				
+		    			}
+		    		}
+				    tr {
+				    	&:hover {
+	    					background: #f0f0f0;	
+			    		    td {
+				    			&:first-child {
+									border-left: 5px solid #f0f0f0;			    				
+				    			}			    		    	
+			    		    }    							    		
+				    	}
+				    	&.active {
+				    		    color: #e05f32;
+				    		    td {
+					    			&:first-child {
+										border-left: 5px solid #e05f32;			    				
+					    			}			    		    	
+				    		    }
+				    	}
+			    	
+				    }		    		
+		    	}				    	
+
+			    td {
+			    	cursor: pointer;
+				    text-overflow: ellipsis;
+				    overflow: hidden;
+				    white-space: nowrap;
+				    max-width: 100px;		
+				    text-align: center;   	
+			    }			
+			}
+		}
+		.cadidate-page {
+			text-align: center;
+			background-color: #fff;
+			ul {
+				margin: 0;
+			    padding: 10px;
+			    li {
+				    a {
+						color: #019B90;			    	
+				    }
+				    &.on {
+				    	a {
+				    		color: #fff;
+				    		background-color: #019B90;
+				    	}
+				    }			    	
+			    }
+
+			}
+		}	
+		.match-allcandidate {
+		    width: 100%;
+		    margin-top: 12px;
+		    color: #019B90;
+		    font-size: 14px;
+		    padding: 4px 0;
+		    border: 1px solid #019B90;
+		    border-radius: 3px;		
+		    background-color: transparent;	
+		}	
+		.wrap {
+			.candidate-box {
+				display: none;
+				@include candidate-info;
+				&.active {
+					display: block;
+				}
+			}
+			.info {
+				box-shadow: none !important;
+			}
+		}
+	}
+	#srd {
+
+	}
+	#srd1 {
+
+	}	
+}
