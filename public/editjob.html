@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <title>北部湾人才金港-麦穗-修改职位</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+    <meta name="renderer" content="webkit" /> 
+	<link rel="shortcut icon" type="image/x-icon" href="" /> 
+	<link href="./css/app.css" rel="stylesheet">
+	<link href="./css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="editjob">
+    <div class="top">
+        <div class="container">
+            <div class="title">修改职位</div>
+        </div>
+    </div>  
+
+    <div class="status-bar">
+        <div class="box container">
+            <div class="on" tid="1">基本信息</div>
+            <div class="" tid="2">招聘渠道</div>
+            <div class="" tid="3">初选策略</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-box on"  tid="1" id="baseinfo">
+            <div class="container">
+                <div class="wrap">                  
+                    <div class="title">
+                        <h3>填写职位描述</h3>
+                    </div>  
+                    <div class="form-body">
+                        <form action="">
+                            <div class="container-fluid">
+                                <div class="wrapper">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="form-title">职位类别</span>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="cp" id="zwlb">
+                                                <div class="row">
+                                                    <div class="col-md-9">
+                                                        <div class="form-group jobtype-box">
+                                                            <div class="job-type-box">
+                                                                <select class="form-control job-type">
+                                                                  <option>全部</option>
+                                                                </select>
+                                                                <select class="form-control job-type">
+                                                                  <option>全部</option>
+                                                                </select>
+                                                                <select class="form-control job-type">
+                                                                  <option>全部</option>
+                                                                </select>                                                       
+                                                            </div>
+                                                                                                
+                                                        </div>                                                  
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <span class="del-job">删除职位类别</span>
+                                                    </div>                                                      
+                                                </div>
+                                            
+                                            </div>
+                                        
+                                        </div>
+
+                                    </div>  
+                                    <div class="add-job-type">
+                                        <button type="button" class="btn btn-primary add-jobtype-btn">新增职位类别</button>
+                                    </div>                              
+                                </div>
+                                
+                                <div class="wrapper">
+                                
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-md-2">
+                                                <span class="form-title"><i class="fa fa-asterisk"></i>职位名称</span>
+                                                
+                                                    
+                                            </div>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control" id="jobname" placeholder="填写职位名称  如： 前端工程师">                                    
+                                            </div>
+                                        </div>                                          
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-md-2">
+                                                <span class="form-title">所属部门</span>
+                                                
+                                                    
+                                            </div>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control" id="jobname" placeholder="填写所属部门  如： 技术部">                                  
+                                            </div>
+                                        </div>                                          
+                                    </div>                          
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-md-2">
+                                                <span class="form-title">工作性质</span>                                                
+                                                    
+                                            </div>
+                                            <div class="col-md-10">
+                                                <select class="form-control">
+                                                    <option>全部</option>
+                                                </select>                               
+                                            </div>
+                                        </div>                                          
+                                    </div>  
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-md-2">
+                                                <span class="form-title"><i class="fa fa-asterisk"></i>月薪范围</span>  
+                                                                        
+                                            </div>
+                                            <div class="col-md-10  yx">
+                                                <input type="text" placeholder="最低" class="lowest form-control">
+                                                <span>至</span>
+                                                <input type="text" placeholder="最高" class="heighest form-control">                                  
+                                            </div>
+                                        </div>                                          
+                                    </div>  
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-md-2">
+                                                <span class="form-title"><i class="fa fa-asterisk"></i>工作经验</span>                                              
+                                                    
+                                            </div>
+                                            <div class="col-md-10">
+                                                <select class="form-control">
+                                                    <option>全部</option>
+                                                </select>                               
+                                            </div>
+                                        </div>                                          
+                                    </div>  
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-md-2">
+                                                <span class="form-title"><i class="fa fa-asterisk"></i>学历要求</span>                                              
+                                                    
+                                            </div>
+                                            <div class="col-md-10">
+                                                <select class="form-control">
+                                                    <option>全部</option>
+                                                </select>                               
+                                            </div>
+                                        </div>                                          
+                                    </div>                                                                                                          
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-md-2">
+                                                <span class="form-title"><i class="fa fa-asterisk"></i>职位描述</span>                                              
+                                                    
+                                            </div>
+                                            <div class="col-md-10">
+                                                <textarea class="form-control jobdesc" name="" type="text" required placeholder="填写职位描述">
+                                                    
+                                                </textarea>                         
+                                            </div>
+                                        </div>                                          
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="form-title"><i class="fa fa-asterisk"></i>工作地址</span>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="cp">
+                                                <div class="row">
+                                                    <div class="col-md-9">
+                                                        <div class="form-group jobtype-box">
+                                                            <div class="job-type-box">
+                                                                <select class="form-control job-type">
+                                                                  <option>全部</option>
+                                                                </select>
+                                                                <select class="form-control job-type">
+                                                                  <option>全部</option>
+                                                                </select>
+                                                                <select class="form-control job-type">
+                                                                  <option>全部</option>
+                                                                </select>                                                       
+                                                            </div>
+                                                                                                
+                                                        </div>                                                  
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <span class="del-job">删除地址</span>
+                                                    </div>                                                      
+                                                </div>
+                                            
+                                            </div>                                          
+                                        </div>
+                                        <div class="add-job-addr">
+                                            <button type="button" class="btn btn-primary add-addr-btn">新增工作地址</button>
+                                        </div>                                          
+                                    </div>  
+                                    <div class="bottom">
+                                        <button type="button" class="btn btn-default">存为草稿</button>
+                                        <button type="button" class="btn btn-default release">发布</button>
+                                        <button type="button" class="btn btn-default">归档</button>
+                                    </div>                                      
+                                </div>
+                            </div>
+                        </form>
+                    </div>              
+                </div>
+            </div>
+        </div>  
+        <div class="form-box" tid="2" id="recruitment-channels">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="title">
+                        请选择发布渠道
+                    </div>
+                    <div class="group">
+                        <div class="container">
+                            <div class="row pipeline">
+                                <div class="col-md-3 col-xs-6">
+                                    <div class="box">
+                                        <div class="btn-box">
+                                            <a href="">去绑定</a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <div class="box">
+                                        <div class="btn-box">
+                                            <a href="">去绑定</a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <div class="box">
+                                        <div class="btn-box">
+                                            <a href="">去绑定</a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <div class="box">
+                                        <div class="btn-box">
+                                            <a href="">去绑定</a>
+                                        </div>
+                                    </div>                                    
+                                </div>                                                                                                
+                            </div>
+                        </div>
+                                               
+                    </div>
+                    <div class="btn-group">
+                        <div><a class="btn btn-primary" id="prev">上一步</a></div>
+                        <div><a class="btn btn-primary" id="next">下一步</a></div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-box" tid="3" id="strategy">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="step-img">
+                                <img src="images/step.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="step-text">
+                                <h3 class="title"><i class="fa fa-info-circle"></i>第一步：确定简历筛选标准</h3>
+                                <p class="content">简历筛选是提高招聘流程的第一步。筛选最为核心的指标是工作年数,教育背景和工作职责掌握情况。请您根据企业情况选择相关指标的重要度。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="step-text">
+                                <h3 class="title"><i class="fa fa-info-circle"></i>第一步：确定简历筛选标准</h3>
+                                <p class="content">简历筛选是提高招聘流程的第一步。筛选最为核心的指标是工作年数,教育背景和工作职责掌握情况。请您根据企业情况选择相关指标的重要度。</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="step-img">
+                                <img src="images/step.png" alt="">
+                            </div>                            
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="step-img">
+                                <img src="images/step.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="step-text">
+                                <h3 class="title"><i class="fa fa-info-circle"></i>第一步：确定简历筛选标准</h3>
+                                <p class="content">简历筛选是提高招聘流程的第一步。筛选最为核心的指标是工作年数,教育背景和工作职责掌握情况。请您根据企业情况选择相关指标的重要度。</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="btn-group">
+                        <a href="" class="btn btn-default">开始设置</a>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/app.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script type="text/javascript">
+        (function ($) {	 
+
+            //新增职位类别
+            $(".add-jobtype-btn").click(function(){
+                var jobTypeDom = '<div class="row">'+
+                                    '<div class="col-md-9">'+
+                                        '<div class="form-group jobtype-box">'+
+                                            '<div class="job-type-box">'+
+                                                '<select class="form-control job-type">'+
+                                                  '<option>全部</option>'+
+                                                '</select>'+
+                                                '<select class="form-control job-type">'+
+                                                  '<option>全部</option>'+
+                                                '</select>'+
+                                                '<select class="form-control job-type">'+
+                                                  '<option>全部</option>'+
+                                                '</select>      '+                                              
+                                            '</div>'+
+                                                                                
+                                        '</div> '+                                              
+                                    '</div>'+
+                                    '<div class="col-md-3">'+
+                                        '<span class="del-job">删除职位类别</span>'+
+                                    '</div>'+                                                       
+                                '</div>';
+                $(".cp").append(jobTypeDom);
+            });  
+            $(".cp").on('click','.del-job',function(){
+
+                $(this).parent().parent(".row").remove();
+                
+            }); 
+
+
+            //tab点击事件
+            $(".box div").click(function(){
+                $(".box div").removeClass("on");
+                $(this).addClass("on");
+
+                var tid = $(this).attr("tid");
+                $(".form-box").removeClass("on");
+                $(".form-box[tid="+tid+"]").addClass("on");
+            });
+
+            //上一步、下一步点击事件  
+            $("#prev").click(function(){
+                $(".box div").removeClass("on");
+                $(".form-box").removeClass("on");
+
+                $(".box div[tid='1']").addClass("on");
+                $(".form-box[tid='1']").addClass("on");
+            }); 
+
+            $("#next").click(function(){
+                $(".box div").removeClass("on");
+                $(".form-box").removeClass("on");
+
+                $(".box div[tid='3']").addClass("on");
+                $(".form-box[tid='3']").addClass("on");
+            });             
+
+        })(jQuery);
+    </script>	
+</body>
+</html>

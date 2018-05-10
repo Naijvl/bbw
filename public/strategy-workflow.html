@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <title>北部湾人才金港-麦穗-职位面试策略</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+    <meta name="renderer" content="webkit" /> 
+	<link rel="shortcut icon" type="image/x-icon" href="" /> 
+	<link href="./css/app.css" rel="stylesheet">
+	<link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link href="./libs/nouislider/nouislider.min.css" rel="stylesheet">
+</head>
+<body class="strategy-workflow">
+    <div class="top">
+        <div class="container">
+            <div class="title">职位</div>
+        </div>
+    </div> 
+    <div class="content">
+        <div class="tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-2 tab-btn on"  tid="1">简历初筛偏好</div>
+                    <div class="col-xs-2 tab-btn" tid="2">面试筛选流程</div>
+                    <div class="col-xs-2 tab-btn" tid="3">性格测试模型</div>
+                    <div class="col-xs-2 tab-btn" tid="4">胜任力</div>
+                    <div class="col-xs-2 tab-btn" tid="5">面试题目</div>
+                    <div class="col-xs-2 tab-btn" tid="6">面试策略预览</div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-container">
+            <div class="tab-item on"  tid="1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 left">
+                            <div class="wrapper">
+                                <div class="group">
+                                    <div class="header">
+                                        <div class="main">请定制简历筛选偏好</div>
+                                        <div class="sub">确定简历筛选条件，精确提升候选人质量</div>
+                                    </div>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-3 text">工作年数</div>
+                                            <div class="col-xs-9">
+                                                <div id="working-years"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-3 text">教育背景</div>
+                                            <div class="col-xs-9">
+                                                <div id="education-background"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-3 text">工作职责</div>
+                                            <div class="col-xs-9">
+                                                <div id="job-responsibilities"></div>
+                                            </div>
+                                        </div>                                                                            
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div class="detail">
+                                        简历筛选是提高招聘流程的第一步。筛选最为核心的指标是工作年数，教育背景和工作职责掌握情况。请您根据企业情况选择相关指标的重要度
+                                    </div>
+                                    <div class="detail">
+                                        工作年数：候选人的累计工作年数 <br>
+                                        教育背景：候选人的学历和毕业院校质量 <br>
+                                        工作职责：候选人在该职位所处细分行业内的职业技能掌握情况 <br>                                   
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <button class="prev btn btn-primary hidden">上一步</button>
+                                    <button class="next btn btn-primary">下一步</button>
+                                </div>                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-item" tid="2">
+                2
+                <div class="btn-box">
+                    <button class="prev btn btn-primary">上一步</button>
+                    <button class="next btn btn-primary">下一步</button>
+                </div>                       
+            </div>
+            <div class="tab-item" tid="3">3
+                <div class="btn-box">
+                    <button class="prev btn btn-primary">上一步</button>
+                    <button class="next btn btn-primary">下一步</button>
+                </div>                  
+            </div>
+            <div class="tab-item" tid="4">4
+                <div class="btn-box">
+                    <button class="prev btn btn-primary">上一步</button>
+                    <button class="next btn btn-primary">下一步</button>
+                </div>  
+            </div>
+            <div class="tab-item" tid="5">5
+                <div class="btn-box">
+                    <button class="prev btn btn-primary">上一步</button>
+                    <button class="next btn btn-primary">预览完成</button>
+                </div>  
+            </div>
+            <div class="tab-item" tid="6">6
+                <div class="btn-box">
+                    <button class="prev btn btn-primary">上一步</button>
+                    <button class="next btn btn-primary">完成</button>
+                </div>                  
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/app.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./libs/nouislider/nouislider.min.js"></script>
+    
+    <script type="text/javascript">
+        (function ($) {	 
+
+            //简历筛选偏好
+            var years = document.getElementById('working-years');
+            var background = document.getElementById('education-background');
+            var responsibilities = document.getElementById('job-responsibilities');
+
+            noUiSlider.create(years, {
+
+                range: {
+                    'min': 1,
+                    '50%': 2,                    
+                    'max': 3
+                },
+                snap: true,
+                step: 1,            
+                start: 1,
+
+                pips: {
+                    mode: 'range',
+                    values: ['一般1','一般2','一般3'],
+                    stepped: true,
+                    density: 999
+                }                
+            });    
+
+            noUiSlider.create(background, {
+
+                range: {
+                    'min': 1,
+                    '50%': 2,                    
+                    'max': 3
+                },
+                snap: true,
+                step: 1,            
+                start: 1,
+                to: [1,'一般3'],
+                pips: {
+                    mode: 'range',
+                    values: ['一般1','一般2','一般3'],
+                    stepped: true,
+                    density: 999
+                }                
+            }); 
+
+            noUiSlider.create(responsibilities, {
+
+                range: {
+                    'min': 1,
+                    '50%': 2,                    
+                    'max': 3
+                },
+                snap: true,
+                step: 1,            
+                start: 1,
+                to: [1,'一般3'],
+                pips: {
+                    mode: 'range',
+                    values: ['一般1','一般2','一般3'],
+                    stepped: true,
+                    density: 999
+                }                
+            });     
+
+
+            //tab点击事件
+            $(".tab-btn").click(function(){
+                $(".tab-btn").removeClass("on");
+                $(this).addClass("on");
+
+                var tid = $(this).attr("tid");
+                $(".tab-item").removeClass("on");
+                $(".tab-item[tid="+tid+"]").addClass("on");
+            });
+
+            //上一步、下一步点击事件  
+            $(".btn-box .prev").click(function(){
+                $(".tab-btn").removeClass("on");
+                $(".tab-item").removeClass("on");
+
+                var tid = $(this).parents(".tab-item").attr("tid");
+                var nextId = parseInt(tid) - 1;
+                $(".tab-btn[tid="+nextId+"]").addClass("on");
+                $(".tab-item[tid="+nextId+"]").addClass("on");                
+
+            }); 
+
+            $(".btn-box .next").click(function(){
+                $(".tab-btn").removeClass("on");
+                $(".tab-item").removeClass("on");
+
+                var tid = $(this).parents(".tab-item").attr("tid");
+                var nextId = parseInt(tid) + 1;
+                $(".tab-btn[tid="+nextId+"]").addClass("on");
+                $(".tab-item[tid="+nextId+"]").addClass("on");                
+
+            });                        	        
+        })(jQuery);
+    </script>	
+</body>
+</html>

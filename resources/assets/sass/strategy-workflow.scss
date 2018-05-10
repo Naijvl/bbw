@@ -1,0 +1,110 @@
+.strategy-workflow {
+	background-color: #f8f8f8;
+	.top {
+		@include page-header;
+	}
+	.content {
+
+		.tab {
+			.tab-btn {
+		        height: 28px;
+		        line-height: 28px;	
+		        background: #f2f3f8;
+		    	color: #444;
+		    	text-align: center;
+		    	cursor: pointer;
+		    	&.on , &:hover  {
+				    color: #ffffff;
+				    background-color: #e05f32;		    		
+		    	}			
+			}
+		}
+		.tab-container {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: calc(100% - 78px);	
+			.tab-item {
+				display: none;
+				&.on {
+					display: block;
+				}
+				> div {
+					height: 100%;
+					> .row {
+						height: 100%;
+					}
+				}
+				height: 100%;
+				.left {
+					height: 100%;
+					background-color: #fff;
+					.wrapper {
+						width: 90%;
+						margin: 0 auto;
+					}
+					.group {
+						margin-top: 4em;
+						.header {
+							text-align: center;
+							.main {
+								font-weight: bold;
+								font-size: 20px;
+								color: #666;
+							}
+							.sub {
+							    margin-top: 5px;
+							    color: #aaaaaa;
+							    font-size: small;								
+							}
+						}
+						.row {
+							margin-top: 10px;
+							margin-bottom: 10px;
+							.text {
+								line-height: 38px;
+							}	
+							> div {
+								padding: 0;
+							}						
+						}
+
+					}
+					.details {
+						margin-top: 30px;
+						.detail {
+						    text-align: justify;
+						    margin-top: 10px;
+						    color: #aaaaaa;
+						    font-size: small;
+						    opacity: .65;							
+						}
+					}
+					.btn-box {
+						margin: 3em 0;
+						overflow: hidden;
+						button {
+							&.hidden {
+								display: none;
+							}
+						}
+						.prev {
+							float: left;
+						}
+						.next {
+							float: right;
+						}
+
+					}
+				}
+			}		
+		}
+	}
+
+	#working-years,#education-background,#job-responsibilities {
+		width: 100%;
+		height: 8px;
+		margin: 15px 0 40px 0;
+	}
+}

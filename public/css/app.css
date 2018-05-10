@@ -8406,6 +8406,13 @@ button.close {
   font-weight: bold;
 }
 
+@media screen and (max-width: 992px) {
+  .form-box .wrap .form-body .wrapper .form-title {
+    float: none !important;
+    margin-right: 0 !important;
+  }
+}
+
 .news {
   border-top: 1px solid #ccc;
   padding-top: 0 !important;
@@ -9808,6 +9815,7 @@ button.close {
   position: relative;
   height: 28px;
   line-height: 28px;
+  cursor: pointer;
 }
 
 .addjob .status-bar .box div.disabled:hover {
@@ -10937,4 +10945,487 @@ button.close {
 .jobdetail .wrap .wrap .info {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+.editjob {
+  background-color: #f8f8f8;
+}
+
+.editjob .status-bar .box div {
+  float: left;
+  width: 33.33333333333333%;
+  text-align: center;
+  background: #f2f3f8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #444;
+  position: relative;
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.editjob .status-bar .box div.disabled:hover {
+  background: #787878;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.editjob .status-bar .box div.on {
+  color: #ffffff;
+  background-color: #e05f32;
+  -webkit-box-shadow: 0 8px 22px #ebebeb;
+  box-shadow: 0 8px 22px #ebebeb;
+}
+
+.editjob .form-box .wrap {
+  margin-top: 25px;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 25px 32px;
+  -webkit-box-shadow: 0 8px 22px #ebebeb;
+  box-shadow: 0 8px 22px #ebebeb;
+  background-color: #fff;
+}
+
+.editjob .form-box .wrap .title {
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+}
+
+.editjob .form-box .wrap .title h3 {
+  margin: 0px 0 8px 5px;
+  border-left: 6px solid #019B90;
+  padding-left: 10px;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.editjob .form-box .wrap .form-body .wrapper {
+  margin-top: 20px;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .del-job {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 3px;
+  float: right;
+  background-color: #fff;
+  border-color: #019b90;
+  color: #019b90;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .del-job:hover {
+  background-color: #18a689;
+  border-color: #18a689;
+  color: #fff;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .job-type {
+  margin-bottom: 15px;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .add-job-type {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .add-job-type .add-jobtype-btn {
+  background-color: #fff;
+  border-color: #019b90;
+  color: #019b90;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .add-job-type .add-jobtype-btn:hover {
+  background-color: #18a689;
+  border-color: #18a689;
+  color: #fff;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .cp .row {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .form-title {
+  float: right;
+  margin-right: 50px;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .form-title i {
+  font-size: 9px;
+  vertical-align: bottom;
+  line-height: 17px;
+  margin-right: 5px;
+  color: #e05f32;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .form-group {
+  overflow: hidden;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .yx * {
+  float: left;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .yx .heighest, .editjob .form-box .wrap .form-body .wrapper .yx .lowest {
+  width: 40%;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .yx span {
+  width: 20%;
+  line-height: 36px;
+  text-align: center;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .jobdesc {
+  height: auto;
+  min-height: 200px;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .add-job-addr {
+  text-align: center;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .add-job-addr .add-addr-btn {
+  background-color: #fff;
+  border-color: #019b90;
+  color: #019b90;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .add-job-addr .add-addr-btn:hover {
+  background-color: #18a689;
+  border-color: #18a689;
+  color: #fff;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .bottom {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .bottom .release {
+  background-color: #fff;
+  border-color: #019b90;
+  color: #019b90;
+}
+
+.editjob .form-box .wrap .form-body .wrapper .bottom .release:hover {
+  background-color: #18a689;
+  border-color: #18a689;
+  color: #fff;
+}
+
+.editjob .top {
+  background: #fff;
+}
+
+.editjob .top .title {
+  display: inline-block;
+  color: #7a7a7a;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.editjob .content .form-box {
+  display: none;
+}
+
+.editjob .content .form-box.on {
+  display: block;
+}
+
+.editjob .content #recruitment-channels .wrapper {
+  background-color: white;
+  margin-top: 20px;
+  padding: 25px 32px;
+  -webkit-box-shadow: 0 8px 22px #ebebeb;
+          box-shadow: 0 8px 22px #ebebeb;
+}
+
+.editjob .content #recruitment-channels .wrapper .title {
+  display: block;
+  border-left: 5px solid #e05f32;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.editjob .content #recruitment-channels .wrapper .group {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.editjob .content #recruitment-channels .wrapper .group .pipeline .box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-image: url(../images/qd.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #1f2833;
+  margin-bottom: 1em;
+}
+
+.editjob .content #recruitment-channels .wrapper .group .pipeline .box .btn-box {
+  left: 0;
+  top: 0;
+  background: rgba(1, 155, 144, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+
+.editjob .content #recruitment-channels .wrapper .group .pipeline .box .btn-box a {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 10px;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.editjob .content #recruitment-channels .wrapper .group .pipeline .box .btn-box a:hover {
+  color: #019b90;
+  background-color: #fff;
+}
+
+.editjob .content #recruitment-channels .wrapper .btn-group {
+  overflow: hidden;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.editjob .content #recruitment-channels .wrapper .btn-group #prev {
+  float: left;
+}
+
+.editjob .content #recruitment-channels .wrapper .btn-group #next {
+  float: right;
+}
+
+.editjob .content #strategy .wrapper {
+  background-color: white;
+  margin-top: 20px;
+  padding: 25px 32px;
+  -webkit-box-shadow: 0 8px 22px #ebebeb;
+          box-shadow: 0 8px 22px #ebebeb;
+}
+
+.editjob .content #strategy .row {
+  margin-bottom: 30px;
+}
+
+.editjob .content #strategy .row .step-img {
+  text-align: center;
+}
+
+.editjob .content #strategy .row .step-img img {
+  width: 40%;
+  margin: 2em auto;
+}
+
+.editjob .content #strategy .row .step-text .title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  text-align: center;
+}
+
+.editjob .content #strategy .row .step-text .title i {
+  margin-right: 8px;
+  color: #e05f32;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.editjob .content #strategy .row .step-text .content {
+  color: #999;
+}
+
+.editjob .content #strategy .btn-group {
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.editjob .content #strategy .btn-group a {
+  background-color: #fff;
+  border-color: #019b90;
+  color: #019b90;
+  float: none;
+}
+
+.editjob .content #strategy .btn-group a:hover {
+  background-color: #18a689;
+  border-color: #18a689;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #strategy .row {
+    margin-bottom: 15px !important;
+  }
+  #strategy .row .step-img img {
+    width: 90% !important;
+    margin: 1em auto !important;
+  }
+}
+
+.strategy-workflow {
+  background-color: #f8f8f8;
+}
+
+.strategy-workflow .top {
+  background: #fff;
+}
+
+.strategy-workflow .top .title {
+  display: inline-block;
+  color: #7a7a7a;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.strategy-workflow .content .tab .tab-btn {
+  height: 28px;
+  line-height: 28px;
+  background: #f2f3f8;
+  color: #444;
+  text-align: center;
+  cursor: pointer;
+}
+
+.strategy-workflow .content .tab .tab-btn.on, .strategy-workflow .content .tab .tab-btn:hover {
+  color: #ffffff;
+  background-color: #e05f32;
+}
+
+.strategy-workflow .content .tab-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 78px);
+}
+
+.strategy-workflow .content .tab-container .tab-item {
+  display: none;
+  height: 100%;
+}
+
+.strategy-workflow .content .tab-container .tab-item.on {
+  display: block;
+}
+
+.strategy-workflow .content .tab-container .tab-item > div {
+  height: 100%;
+}
+
+.strategy-workflow .content .tab-container .tab-item > div > .row {
+  height: 100%;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left {
+  height: 100%;
+  background-color: #fff;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .group {
+  margin-top: 4em;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .group .header {
+  text-align: center;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .group .header .main {
+  font-weight: bold;
+  font-size: 20px;
+  color: #666;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .group .header .sub {
+  margin-top: 5px;
+  color: #aaaaaa;
+  font-size: small;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .group .row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .group .row .text {
+  line-height: 38px;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .group .row > div {
+  padding: 0;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .details {
+  margin-top: 30px;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .details .detail {
+  text-align: justify;
+  margin-top: 10px;
+  color: #aaaaaa;
+  font-size: small;
+  opacity: .65;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .btn-box {
+  margin: 3em 0;
+  overflow: hidden;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .btn-box button.hidden {
+  display: none;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .btn-box .prev {
+  float: left;
+}
+
+.strategy-workflow .content .tab-container .tab-item .left .btn-box .next {
+  float: right;
+}
+
+.strategy-workflow #working-years, .strategy-workflow #education-background, .strategy-workflow #job-responsibilities {
+  width: 100%;
+  height: 8px;
+  margin: 15px 0 40px 0;
 }

@@ -755,6 +755,9 @@ $masthead-height: 70px;
 
 
 //Lvjian
+//公共
+@import "public";
+
 //新闻页面-废弃
 @import "news";
 
@@ -784,4 +787,10 @@ $masthead-height: 70px;
 
 //职位详情
 @import "jobdetail";
+
+//修改职位
+@import "editjob";
+
+//职位面试策略
+@import "strategy-workflow";
 

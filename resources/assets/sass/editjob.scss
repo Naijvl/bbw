@@ -1,0 +1,150 @@
+.editjob {
+	background-color: #f8f8f8;
+	@include job-info;	
+	.top {
+		@include page-header;
+	}	
+	.content {
+		
+		.form-box {
+			display: none;
+			&.on {
+				display: block;
+			}
+		}	
+		#recruitment-channels {
+			.wrapper {
+			    background-color: white;
+			    margin-top: 20px;
+			    padding: 25px 32px;
+			    box-shadow: 0 8px 22px #ebebeb;				
+				.title {
+				    display: block;
+				    border-left: 5px solid #e05f32;
+				    padding-left: 10px;
+				    font-size: 20px;
+				}
+				.group {
+    				margin: 20px 0;	
+    				display: flex;
+    				.pipeline {
+					    .box {
+					    	
+					    	position: relative;
+						    width: 100px;
+						    height: 100px;
+						    margin: 0 auto;
+						    background-image: url(../images/qd.png);
+						    background-repeat: no-repeat;
+						    background-size: contain;
+						    background-position: center center;
+						    background-color: #1f2833;
+						    margin-bottom: 1em;						    
+						    .btn-box {
+								left: 0;
+							    top: 0;
+							    background: rgba(1, 155, 144, 0.9);
+							    position: absolute;
+							    width: 100%;
+							    height: 100%;
+							    color: #fff;	
+							    text-align: center;
+							    line-height: 100px;
+							    a {
+								    display: inline-block;
+								    padding: 5px 8px;
+								    border: 1px solid #fff;
+								    color: #fff;
+								    background-color: transparent;
+								    border-radius: 10px;		
+								    text-decoration: none;
+								    line-height: 20px;
+								    &:hover {
+								    	color: #019b90;
+								    	background-color: #fff;
+								    }			    	
+							    }							
+						    }					    	
+					    } 					
+    				}				
+				}	
+				.btn-group {
+					overflow: hidden;
+					margin: 50px 0;	
+					width: 100%;				
+					#prev {
+						float: left;
+					}
+					#next {
+						float: right;
+					}
+				}			
+			}
+
+		}
+
+		#strategy {
+			.wrapper {
+			    background-color: white;
+			    margin-top: 20px;
+			    padding: 25px 32px;
+			    box-shadow: 0 8px 22px #ebebeb;					
+			}
+			.row {
+				margin-bottom: 30px;
+				.step-img {
+					text-align: center;
+					img {
+						width: 40%;
+						margin: 2em auto;
+					}
+				}
+				.step-text {
+					.title {
+					    font-size: 16px;
+					    font-weight: bold;
+					    line-height: 22px;	
+					    text-align: center;				
+						i {
+						    margin-right: 8px;
+						    color: #e05f32;
+						    font-size: 18px;
+						    font-weight: normal;						
+						}
+
+					}
+					.content {
+						color: #999;						
+					}				
+				}				
+			}
+			.btn-group {
+				margin: 30px 0;	
+				width: 100%;
+				text-align: center;
+				a {
+					@include greenbtn;
+					float: none;
+				}			
+			}
+
+		}
+	}
+
+
+}
+
+@media screen and (max-width: 768px) {
+	#strategy {
+		.row {
+			margin-bottom: 15px !important;
+			.step-img {
+				img {
+					width: 90% !important;
+					margin: 1em auto !important;
+				}
+			}				
+		}
+	}
+
+}
